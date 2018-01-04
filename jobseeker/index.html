@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/resource.js"></script>
+		<script src="index.js"></script>
+		<script>
+			mui.init()
+			mui.plusReady(function() {
+				plus.navigator.setStatusBarBackground("#007AFF"); //OS顶部状态栏背景色
+				plus.screen.lockOrientation("portrait-primary"); //禁止横屏切换
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="user">
+				<img src="img/user.jpg" class="photo" />
+				<div class="info">
+					<h3 id="username"></h3>
+					<div class="desc">
+						<span class="level"></span>
+						<span class="type"></span>
+						<div class="process">
+							<div class="percent"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="state">
+				<ul>
+					<li>
+						<span class="num">20</span>
+						<span class="desc">已投简历</span>
+					</li>
+					<li>
+						<span class="num">17</span>
+						<span class="desc">我的面试</span>
+					</li>
+					<li>
+						<span class="num">3</span>
+						<span class="desc">我的收藏</span>
+					</li>
+				</ul>
+			</div>
+			<div class="navigator">
+				<ul>
+					<li>
+						<a href="">
+							<span class="ball color-1">
+								<i class="iconfont icon-addressbook"></i>
+							</span> 企业招聘
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-2">
+								<i class="iconfont icon-brush"></i>
+							</span> 岗位介绍
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-3">
+								<i class="iconfont icon-document"></i>
+							</span> 模拟面试
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-4">
+								<i class="iconfont icon-customerservice"></i>
+							</span> 面试辅导
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a id="resume">
+							<span class="ball color-5">
+								<i class="iconfont icon-tasklist"></i>
+							</span> 我的简历
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-6">
+								<i class="iconfont icon-questions"></i>
+							</span> 技术培训
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-7">
+								<i class="iconfont icon-video"></i>
+							</span> 大讲堂
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="ball color-8">
+								<i class="iconfont icon-computer"></i>
+							</span> 技术资料
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="recruit">
+				<h2>最新招聘</h2>
+				<ul>
+					<li>
+						<!--<a>
+							<div class="letter">前</div>
+							<div class="info">
+								<h4>Web前端工程师</h4>
+								<div>
+									<span class="company">大连华宇自动化科技有限公司</span>
+									<span class="salary">4~5K</span>
+								</div>
+								<div>
+									<i class="iconfont icon-coordinates_fill"></i>
+									<span class="city">大连</span>
+									<i class="iconfont icon-people_fill"></i>
+									<span class="education">本科</span>
+									<i class="iconfont icon-transaction_fill"></i>
+									<span class="welfare">五险一金</span>
+								</div>
+							</div>
+						</a>-->
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+	</body>
+
+</html>

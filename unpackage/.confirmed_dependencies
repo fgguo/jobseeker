@@ -1,0 +1,41 @@
+{
+	"login.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": [
+			"img/banner.png",
+			"login.js",
+			"js/resource.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/jquery-3.2.1.min.js",
+			"login.css"
+		]
+	},
+	"index.html": {
+		"refer": [
+			"resume/resume.html",
+			"resume/1.html",
+			"resume/recruit.html"
+		]
+	},
+	"resume/resume.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"resume/recruit.html": {
+		"refer": [
+			"resume/detail.html",
+			"resume/position.html"
+		]
+	},
+	"resume/position.html": {
+		"refer": [
+			"resume/company.html",
+			"resume/companyIntroduction.html"
+		]
+	}
+}

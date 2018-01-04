@@ -1,0 +1,227 @@
+.user {
+  overflow: hidden;
+  background-color: #007AFF;
+  display: flex;
+  padding-top: 30px;
+}
+.user .photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: solid 4px rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.user .info {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+.user .info h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 0 10px 0;
+}
+.user .info .desc {
+  font-size: 14px;
+  color: #fff;
+}
+.user .info .desc .level {
+  background-color: #fff;
+  color: #007AFF;
+  padding: 3px 10px 1px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 5px;
+}
+.user .info .desc .type {
+  font-weight: bold;
+}
+.user .info .desc .process {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.user .info .desc .process .percent {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  height: 100%;
+}
+.state {
+  background-color: #006EE6;
+  overflow: hidden;
+}
+.state ul {
+  list-style: none;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  display: flex;
+}
+.state ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+.state ul li:not(:last-child) {
+  border-right: solid 1px #e0e0e0;
+}
+.state ul li .num {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+.state ul li .desc {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+.navigator {
+  overflow: hidden;
+  padding: 30px 10px 20px 10px;
+  background-color: #fff;
+}
+.navigator ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigator ul:first-child {
+  margin-bottom: 16px;
+}
+.navigator ul li {
+  text-align: center;
+  flex-grow: 1;
+}
+.navigator ul li a {
+  color: #333;
+  font-size: 14px;
+}
+.navigator ul li a .ball {
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.navigator ul li a .ball i {
+  font-size: 36px;
+  color: #fff;
+  line-height: 54px;
+}
+.navigator ul li a .color-1 {
+  background-color: #F66D03;
+}
+.navigator ul li a .color-2 {
+  background-color: #3EA2F7;
+}
+.navigator ul li a .color-3 {
+  background-color: #FBB314;
+}
+.navigator ul li a .color-4 {
+  background-color: #DB0005;
+}
+.navigator ul li a .color-5 {
+  background-color: #FF4D4B;
+}
+.navigator ul li a .color-6 {
+  background-color: #FB2E74;
+}
+.navigator ul li a .color-7 {
+  background-color: #31BD80;
+}
+.navigator ul li a .color-8 {
+  background-color: #FF7A02;
+}
+.recruit {
+  overflow: hidden;
+}
+.recruit h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 36px;
+  padding: 0 20px;
+}
+.recruit ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recruit ul li a {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.recruit ul li a .letter {
+  width: 70px;
+  height: 66px;
+  background-color: #ccc;
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+  line-height: 66px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.recruit ul li a .info {
+  flex-grow: 1;
+}
+.recruit ul li a .info h4 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+.recruit ul li a .info div {
+  overflow: hidden;
+}
+.recruit ul li a .info div .iconfont {
+  float: left;
+  color: #999;
+  margin-right: 3px;
+}
+.recruit ul li a .info div .company {
+  font-size: 14px;
+  color: #666;
+  float: left;
+}
+.recruit ul li a .info div .salary {
+  float: right;
+  color: #FF5B66;
+  font-size: 14px;
+}
+.recruit ul li a .info div .icon-coordinates_fill {
+  font-size: 16px;
+}
+.recruit ul li a .info div .city {
+  float: left;
+  font-size: 12px;
+  color: #999;
+  margin-right: 10px;
+}
+.recruit ul li a .info div .icon-people_fill {
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+}
+.recruit ul li a .info div .education {
+  float: left;
+  font-size: 12px;
+  color: #999;
+  margin-right: 10px;
+}
+.recruit ul li a .info div .icon-transaction_fill {
+  font-size: 19px;
+}
+.recruit ul li a .info div .welfare {
+  float: left;
+  font-size: 12px;
+  color: #999;
+}

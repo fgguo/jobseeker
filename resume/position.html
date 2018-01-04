@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="position.css"/>
+		<link rel="stylesheet" type="text/css" href=""/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">职位详情</h1>
+		</header>
+		
+
+		<script src="../jobseeker/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+						mui.plusReady(function() {
+	
+	       var self=plus.webview.currentWebview();
+	       var index=self.index;
+	       var name=null;
+	//加载招聘信息
+	$.ajax({
+		url: "http://192.168.43.223:8080/nebula/jobseeker/detail",
+		async: false, 
+		type: "post",
+		dataType: "json",
+		data: {
+			index:index
+		},
+		success: function(json) {
+			let ul = $("body");
+			for(let one of json.result) {
+				let id = one.id;
+				let job = one.job;
+				let salary = one.salary;
+				let city = one.city;
+				let education = one.education;
+				let experience = one.experience;
+				name = one.name;
+				let welfare = one.welfare;
+				let type = one.type;
+				let create_time = one.create_time;
+				let responsibility=one.responsibility;
+				let requirement=one.requirement;
+				let li = `
+						<div class="mui-content">
+			<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">
+					<h4>${job}
+						<br>
+						<span id="">
+							<br>￥ ${salary}/月薪
+						</span>
+					</h4>
+					
+					
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<span id="">
+						${city}
+					</span>
+					<span id="">
+						${experience}
+					</span>
+				</div>
+				
+				
+				<!--页脚，放置补充信息或支持的操作-->
+				<div id="enter" class="mui-card-footer">
+					<img class="card-left" src="../img/timg.jpg"/>
+					<div class="card-main">
+						<h4>${name}</h4>
+						<p id="company"></p>
+						<span>${city}</span>
+						<span>${education}</span>
+						<span>${welfare}</span>
+					</div>
+					
+					<div class="card-right">
+						<a class="mui-icon mui-icon-arrowright"></a>
+					</div>
+				</div>
+				<div class="mui-card-footer" style="min-height: 0px;">
+				</div>
+					<div  class="element">
+						<div class="label">五险一金</div>
+					</div>
+					<div  class="element">
+						<div class="label">绩效奖金</div>
+					</div>
+					<div  class="element">
+						<div class="label">加班补助</div>
+					</div>
+					<div  class="element">
+						<div class="label">年终奖</div>
+					</div>
+					<div  class="element">
+						<div class="label">提供住宿</div>
+					</div>
+					<div  class="element">
+						<div class="label">带薪休假</div>
+					</div>
+					<div  class="element">
+						<div class="label">医疗保险</div>
+					</div>
+					<div  class="element">
+						<div class="label">全勤奖</div>
+					</div>
+				
+			</div>
+
+			<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">职位描述</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<h4>岗位介绍</h4>
+					<p>
+						${responsibility}
+					</p>
+					<h4>任职要求</h4>
+					<p>
+						${requirement}
+					</p>
+				</div>
+			</div>
+			
+			<div class="btndiv">
+				<button id="pb" type="button" class="mui-btn mui-btn-primary mybtn">投递简历</button>
+			</div>
+
+		</div>
+				`;
+				ul.append(li);
+			}
+		},
+		error: function() {
+			mui.toast("执行错误");
+		}
+	});
+	$("#pb").click(function(){
+		mui.toast("投递成功！");
+	});
+	$("#enter").on("tap", function() {
+		//mui.toast("点击了");
+	mui.openWindow({
+                    url: "companyIntroduction.html",
+                    id: "company",
+                    waiting: {
+                        autoShow: false
+                    },
+                     extras:{
+                      name:name
+                    }
+    
+                });
+	});
+});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="login.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<h1 class="mui-title">滕泰人才库</h1>
+		</header>
+		<div class="mui-content">
+			<img src="img/banner.png" width="100%" />
+			<ul class="navigator">
+				<li>
+					<a class="active" name="login">账号密码登录</a>
+				</li>
+				<li>
+					<a name="registor">新用户注册</a>
+				</li>
+			</ul>
+			<div class="panel" name="login">
+				<p>
+					<i class="iconfont icon-people"></i>
+					<input type="text" name="username" placeholder="用户名 / 手机号 / 邮箱" class="input" maxlength="50" autocomplete="off" />
+				</p>
+				<p>
+					<i class="iconfont icon-lock"></i>
+					<input type="password" name="password" placeholder="密码" class="input" maxlength="20" />
+				</p>
+				<p>
+					<input type="button" id="login-btn" class="btn" value="登录" />
+				</p>
+				<p>
+					<a class="forget-password">忘记密码？</a>
+				</p>
+			</div>
+			<div class="panel" name="registor">
+				<p>
+					<i class="iconfont icon-people"></i>
+					<input type="text" name="username" placeholder="用户名 / 手机号 / 邮箱" class="input" autocomplete="off" />
+				</p>
+				<p>
+					<i class="iconfont icon-lock"></i>
+					<input type="password" name="password" placeholder="密码" class="input" />
+				</p>
+				<p>
+					<i class="iconfont icon-refresh"></i>
+					<input type="password" name="confirm" placeholder="确认密码" class="input" />
+				</p>
+				<p>
+					<input type="button" id="registor-btn" class="btn" value="注册" />
+				</p>
+
+			</div>
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/resource.js"></script>
+		<script src="login.js"></script>
+		<script>
+			mui.init()
+			mui.plusReady(function() {
+				plus.navigator.setStatusBarBackground("#007AFF"); //OS顶部状态栏背景色
+				plus.screen.lockOrientation("portrait-primary"); //禁止横屏切换
+				//判断用户是否已经认证
+				$.ajax({
+					url: resource.nebula.host + "/jobseeker/isAuthenticated",
+					type: "post",
+					dataType: "json",
+					success: function(json) {
+						var result = json.result;
+						if(result) {
+							mui.openWindow('index.html', 'index.html', {}); //跳转到首页
+						}
+					},
+					error: function() {
+						mui.toast("执行错误");
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

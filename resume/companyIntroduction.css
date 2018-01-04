@@ -1,0 +1,147 @@
+.mui-bar{
+    background-color: #0099FF !important;
+    width: 414px;
+  	height: 50px;
+}
+.mui-title{
+     color:#FFFFFF !important;
+     font-family: 微软雅黑;
+ 	 font-size: 18px; 
+ 	 margin-right: 10% !important;
+}
+
+.mui-action-back{
+    color:#FFFFFF !important;
+}
+.file{
+	/*规定当内容溢出元素框时发生的事情。如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+	/*overflow: visible;*/
+	/*生成相对定位的元素，相对于其正常位置进行定位。*/
+	position:relative;
+	top:5px;
+	/*width: 100%;
+	height: 100%;*/
+}
+.tag{
+	/*display: flex;*/
+	flex-wrap: wrap;
+	position:relative;
+	top:50px;
+}
+.answer1{
+	position:absolute;
+	top:0px;
+	left:48px;
+	color:#000000;
+	font-size: 14px;
+	width: 130px;
+}
+.answer2{
+	position:absolute;
+	top:0px;
+	left:48px;
+	color:#000000;
+	font-size: 14px;
+	width: 300px;
+}
+div{
+	font-family: 微软雅黑;
+}
+.companyName{
+	font-family: 微软雅黑;
+	font-size: 24px;
+	position:relative;
+	top:60px;
+	left:10px;
+	/*width: 200px;*/
+	/*margin-top: 60px;
+	margin-left: 10px;*/
+}
+.property{
+	
+	/*flex-grow: 1;*/
+	/*生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。*/
+	position:absolute;
+	top:30px;
+	margin-left:10px;
+	/*margin-top: 20px;
+	margin-left: 2px;*/
+	background-color: #999999;
+	width: 46px;
+  	height: 21px;
+  	border-radius: 5px;
+  	/*text-align: center;*/
+}
+.scale{
+	/*flex-grow: 1;*/
+	position:absolute;
+	top:30px;
+	margin-left:180px;
+	/*margin-top: 20px;
+	margin-left: 2px;*/
+	background-color: #999999;
+	width: 46px;
+  	height: 21px;
+  	border-radius: 5px;
+  	/*text-align: center;*/
+}
+.profession{
+	/*flex-grow: 1;*/
+	position:absolute;
+	top:60px;
+	margin-left:10px;
+	/*margin-top: 20px;
+	margin-left: 2px;*/
+	background-color: #999999;
+	width: 46px;
+  	height: 21px;
+  	border-radius: 5px;
+  	/*text-align: center;*/
+}
+.address{
+	/*flex-grow: 1;*/
+	position:absolute;
+	top:90px;
+	margin-left:10px;
+	background-color: #999999;
+	width: 46px;
+  	height: 21px;
+  	border-radius: 5px;
+  	/*text-align: center;*/
+}
+dd{
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.question{
+	position:absolute;
+	top:0px;
+	left:10px;
+	color: #ffffff;
+	font-size: 12px;
+	
+	/*margin-left: 9px;*/
+}
+img{
+	position:absolute;
+	top:210px;
+	left: 10px;
+	width:360px;
+	height:265px;
+}
+.content{
+	position:absolute;
+	top:500px;
+	left: 10px;
+	width:360px;
+}
+/*header{
+	background-color:  #FF99FF !important;
+	box-shadow:none  !important;
+	border-bottom: none !important;	
+}
+
+
+header h1{
+	color: #FFFFFF !important;
+}*/

@@ -1,0 +1,20 @@
+body{
+	font: "微软雅黑" !important;
+}
+.header {
+  background-color: #007AFF !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+.header h1 {
+  color: #fff!important;
+  align-content: center !important;
+}
+.header .mui-action-back {
+  color: #fff;
+}
+* {
+  font-family: 微软雅黑;
+  box-sizing: border-box !important;
+}
+

@@ -1,0 +1,131 @@
+.header span {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  float: right;
+  height: 24;
+  padding: 10px 0;
+  margin-right: 5px;
+}
+.resume {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.resume .header-extra {
+  background-color: #007AFF;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.resume .userinfo {
+  background-color: #fff;
+  margin: 10px 15px 0 15px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.resume .userinfo dl {
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+.resume .userinfo dl dt {
+  margin: 0 15px;
+}
+.resume .userinfo dl dt:nth-child(1) {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.resume .userinfo dl dt:nth-child(2) {
+  border-bottom: dashed 1px #e0e0e0;
+}
+.resume .userinfo dl dt a {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+.resume .userinfo dl dt a h4 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+}
+.resume .userinfo dl dt a .photo {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 3px;
+}
+.resume .userinfo dl dt a .label {
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+}
+.resume .userinfo dl dt a .value {
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+}
+.resume .userinfo dl dt a .value i {
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.resume .card {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  margin: 15px 15px 15px 15px;
+  padding: 0 15px;
+}
+.resume .card dl {
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+.resume .card dl dt {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: dashed 1px #e0e0e0;
+  line-height: 41px;
+  color: #333;
+}
+.resume .card dl dd {
+  margin: 0;
+}
+.resume .card dl dd:not(:last-child) {
+  border-bottom: dashed 1px #e0e0e0;
+}
+.resume .card dl dd a {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+.resume .card dl dd a .label {
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+}
+.resume .card dl dd a .value {
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+}
+.resume .card dl dd a .value i {
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.resume .card dl dd [name='content'] {
+  margin: 0 5px;
+}
+.resume .card .btn {
+  display: block;
+  background-color: #007AFF;
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 40px;
+}

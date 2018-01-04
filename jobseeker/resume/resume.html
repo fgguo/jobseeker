@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		
+		<link rel="stylesheet" type="text/css" href="resume.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的简历</h1>
+			<span class="operate">修改</span>
+		</header>
+
+		<div class="mui-content">
+			<div class="resume">
+				<div class="header-extra"></div>
+				<div class="userinfo">
+					<dl>
+						<dt>
+							<a href="" >
+								<h4>头像</h4>
+								<img src="../img/user.jpg" class="photo"/>
+							</a>
+						</dt>
+						<dt>
+							<a href="">
+								<span class="label">姓名</span>
+								<span class="value">赵萌萌<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dt>
+						<dt>
+							<a href="">
+								<span class="label">会员等级</span>
+								<span class="value">普通会员<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dt>
+					</dl>
+				</div>
+				<div id="info" class="card">
+					<dl>
+						<dt>基本资料</dt>
+						<dd>
+							<a id="sex">
+								<span class="label">性别</span>
+								<span class="value" data-value="女">女<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="birthday">
+								<span class="label">生日</span>
+								<span class="value">1983-05-12<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="height">
+								<span class="label">身高</span>
+								<span class="value">173cm<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="weight">
+								<span class="label">体重</span>
+								<span class="value">55kg<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="marriage">
+								<span class="label">婚姻状况</span>
+								<span class="value" data-value="未婚">未婚<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="ancestral_home">
+								<span class="label">籍贯</span>
+								<span class="value">大连市<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="education">
+								<span class="label">学历</span>
+								<span class="value" data-value="本科">本科<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="tel">
+								<span class="label">电话</span>
+								<span class="value">18612345678<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="email">
+								<span class="label">邮箱</span>
+								<span class="value">test1234@163.com<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="education" class="card">
+					<dl>
+						<dt>教育经历</dt>
+						<dd>
+							<a name="school">
+								<span class="label">毕业学校</span>
+								<span class="value">东北大学<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="major">
+								<span class="label">所学专业</span>
+								<span class="value">自动化<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="education">
+								<span class="label">学历</span>
+								<span class="value" data-value="本科">本科<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="year">
+								<span class="label">毕业年份</span>
+								<span class="value">2017<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+					<input type="button" class="btn" value="添加" name="add" />
+				</div>
+				<div id="work" class="card">
+					<dl>
+						<dt>工作经历</dt>
+						<dd>
+							<a name="company">
+								<span class="label">企业名称</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="hiredate">
+								<span class="label">入职时间</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="leavedate">
+								<span class="label">离职时间</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a>
+								<span class="label">工作内容</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+							<div name="content">
+							</div>
+						</dd>
+					</dl>
+					<input type="button" class="btn" value="添加" />
+				</div>
+				<div class="card">
+					<dl>
+						<dt>5. 自我介绍</dt>
+						<dd>
+							<a href="">
+								<span class="label">无</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="card">
+					<dl>
+						<dt>6. 技术自评</dt>
+						<dd>
+							<a href="">
+								<span class="label">无</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="card">
+					<dl>
+						<dt>7. 技术经验</dt>
+						<dd>
+							<a href="">
+								<span class="label">无</无></span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="card">
+					<dl>
+						<dt>8. 求职要求</dt>
+						<dd>
+							<a href="">
+								<span class="label">工作地点</无></span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a href="">
+								<span class="label">薪资要求</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a href="">
+								<span class="label">求职岗位</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a href="">
+								<span class="label">入职时间</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../js/eleditor/eleditor.js" ></script>
+		
+		<script type="text/javascript">
+			mui.init({
+				gestureConfig: {
+					tap: true, //默认为true
+					doubletap: true, //默认为false
+					longtap: true, //默认为false
+					swipe: true, //默认为true
+					drag: true, //默认为true
+					hold: false, //默认为false，不监听
+					release: false //默认为false，不监听
+				}
+			});
+			mui.plusReady(function() {
+				plus.navigator.setStatusBarBackground("#007AFF"); //OS顶部状态栏背景色
+				plus.screen.lockOrientation("portrait-primary"); //禁止横屏切换
+			});
+		</script>
+		<script src="resume.js"></script>
+	</body>
+
+</html>

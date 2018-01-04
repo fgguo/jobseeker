@@ -1,0 +1,15 @@
+.header {
+  background-color: #007AFF;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+.header h1 {
+  color: #fff;
+}
+.header .mui-action-back {
+  color: #fff;
+}
+* {
+  font-family: 微软雅黑;
+  box-sizing: border-box !important;
+}

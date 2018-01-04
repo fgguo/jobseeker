@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="../jobseeker/js/jquery-3.2.1.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<script src="../jobseeker/js/mui.min.js"></script>
+			<script type="text/javascript">
+			mui.init();
+		</script>
+	</head>
+	<body>
+	<div>
+	<header class="header">
+			<h1>职位详情</h1>
+	</header>
+			<div class="detail">
+				<ul>
+				
+				</ul>
+			</div>
+	</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+						mui.plusReady(function() {
+	
+	       var self=plus.webview.currentWebview();
+	       var index=self.index;
+	//加载招聘信息
+	$.ajax({
+		url: "http://192.168.43.223:8080/nebula/jobseeker/detail",
+		async: false, 
+		type: "post",
+		dataType: "json",
+		data: {
+			index:index
+		},
+		success: function(json) {
+			let ul = $(".detail ul");
+			for(let one of json.result) {
+				let id = one.id;
+				let job = one.job;
+				let salary = one.salary;
+				let city = one.city;
+				let education = one.education;
+				let experience = one.experience;
+				let name = one.name;
+				let welfare = one.welfare;
+				let type = one.type;
+				let create_time = one.create_time;
+				let li = `
+					<li>
+						<a>
+							<div class="info">
+								<h3>${jo  b}</h3>
+								<div>
+									<span class="company">¥</span>
+									<span class="salary">${salary}</span>
+									<span>/月薪</span>
+									<hr>
+								</div>
+								<div>
+									<i class="iconfont icon-coordinates_fill"></i>
+									<span class="city">${city}</span>
+									<i class="iconfont icon-document"></i>
+									<span class="education">${experience}</span>
+									<i class="iconfont icon-refresh"></i>
+									<span class="welfare">${create_time}</span>
+								</div>
+									<div>
+									<h3 class="iconfont icon-enter">${name}</h3>
+								   </div>
+								 <div>
+								 <a background-color: #007AFF> 无限五险一金</a>
+								 </div>
+							</div>
+							<div>
+							<h3>职位描述</h3>
+							</div>
+						</a>
+					</li>
+				`;
+				ul.append(li);
+			}
+		},
+		error: function() {
+			mui.toast("执行错误");
+		}
+	});
+	
+});
+		</script>
+		
+	</body>
+
+</html>
