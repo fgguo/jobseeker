@@ -71,6 +71,7 @@
 				plus.navigator.setStatusBarBackground("#007AFF"); //OS顶部状态栏背景色
 				plus.screen.lockOrientation("portrait-primary"); //禁止横屏切换
 				//判断用户是否已经认证
+				//
 				$.ajax({
 					url: resource.nebula.host + "/jobseeker/isAuthenticated",
 					type: "post",
